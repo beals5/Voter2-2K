@@ -1,3 +1,8 @@
+A quick release to fix an error making command line commands case insensitive. I ended up
+converting all ASL passwords entered via the CLI to lower case!
+Otherwise some suggested convenience features and more tinkering with experimental VCXO code
+No change to the Users Guide compared to Rev 0.06.
+
 * Changed factory default for local repeater mode to be "repeater", not off
 * If a reboot is requested and there are unsaved settings, check with the user first.
 * DAC8571 support for VCXO
