@@ -1,1 +1,4 @@
-
+* Changed factory default for local repeater mode to be "repeater", not off
+* If a reboot is requested and there are unsaved settings, check with the user first.
+* DAC8571 support for VCXO
+* Fixed a programming error where dial passwords were being converted to all lower case
