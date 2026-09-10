@@ -1,1 +1,7 @@
+This is a minor but important update.  The only change are the resistors controlling the gain for audio in and out to allow for more "normal" gain settings for the MTR2000 during audio levels calibration.
+Affected resistors are R8, R14 (Tx Audio gain)
+Affected resistors are R19, R20 (Rx Audio gain)
 
+No other changes, please refer to the Rev 1.11 folder for all other docs including PCB files (no change) and Users guides (no change for this)
+
+will
