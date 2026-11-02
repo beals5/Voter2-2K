@@ -1,1 +1,23 @@
+This is a big update! Three major issues highlighted here with the full list below.
+ - Fixed the cable disconnect/DHCP issue Chris identified.
+ - Added XMODEM download support over the UART
+ - CTCSS now independently enableable for local, General Purpose, and GPS modes.
 
+CHANGES SINCE REV 0.08
+=================================
+* Added user settable GPS time offset (numeric and parametric), mainly for interop with older GPSes.
+* Changed factory default for dial timing from general purpose to GPS-timed.
+* Found/fixed a bug that was sending GPS packets with a "0" timestamp
+* Made the challenge string a random number generated at boot (like the Voter) and not a user setting.
+* Clarified Host/Client password descriptions (thanks Kevin)
+* Reformatted GPS lat/long strings in status GPS to separate degrees from minutes (Dave request)
+* Added reminder to program after download in update sequence
+* Adjusted the "rxtest dev3k" deviation to the right value (it was a placeholder I never got back to)
+* Fixed rssimode, rxtest and update help texts, they were out of date
+* Cleaned up Sat Signal for status gps a bit, fewer blank lines.
+* XMODEM download support! "update xmodem". Download only, not verify and UART only for now.
+* Added "status version" for HW and SW versions, deleted "hwrev" from show as it is now redundant.
+* CTCSS now independently enablable for local, GP and GPS modes
+* renamed xuart command to utest with parameter ext|s2n to test either s2n or external UART
+* Found bug that hung Ethernet on cable unplug. Now Re-run DHCP on cable reconnect.
+* Rx LED now has two user-selectable modes, audio level and COR/CTCSS state.
